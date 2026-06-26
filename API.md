@@ -2,7 +2,7 @@
 
 Tempik exposes a REST API for session management, inbox operations, and message retrieval. All endpoints live under `/api/`.
 
-**Base URL:** `https://tempik.exse7en.fr/api/` (or any configured domain)
+**Base URL:** `https://YOUR_DOMAIN/api/`
 
 ---
 
@@ -29,9 +29,9 @@ Returns the public app configuration.
 ```json
 {
   "appName": "Tempik",
-  "mailDomain": "exse7en.fr",
-  "mailDomains": ["exse7en.fr", "apimurah.my.id", "payin.my.id"],
-  "webHost": "tempik.exse7en.fr"
+  "mailDomain": "example.com",
+  "mailDomains": ["example.com", "another-domain.my.id"],
+  "webHost": "tempik.example.com"
 }
 ```
 
@@ -134,23 +134,23 @@ Creates a new inbox (or claims an existing one) and links it to your session.
 ```json
 // Custom address on default domain
 { "localPart": "myinbox" }
-// → myinbox@exse7en.fr
+// → myinbox@example.com
 
 // Random address
 {}
-// → langitbiru23@exse7en.fr
+// → langitbiru23@example.com
 
 // Custom address on specific domain
-{ "localPart": "test", "domain": "apimurah.my.id" }
-// → test@apimurah.my.id
+{ "localPart": "test", "domain": "another-domain.my.id" }
+// → test@another-domain.my.id
 
 // Random on specific domain
-{ "domain": "payin.my.id" }
-// → melatijaya87@payin.my.id
+{ "domain": "another-domain.my.id" }
+// → melatijaya87@another-domain.my.id
 
 // Invalid domain → 400
 { "domain": "evil.com" }
-// → { "error": "Invalid domain: evil.com. Allowed: exse7en.fr, apimurah.my.id, payin.my.id" }
+// → { "error": "Invalid domain: evil.com. Allowed: example.com, another-domain.my.id" }
 ```
 
 **Response** `201 Created`
